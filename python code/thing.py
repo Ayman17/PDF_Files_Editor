@@ -33,6 +33,7 @@ def extract_page(pdf_path, page_num):
 
     #Extract the page
     for path in pdf_path:
+        print(type(pdf_path))
         pdf_reader = PdfFileReader(path)
         extracted_page.addPage(pdf_reader.getPage(page_num - 1))
 
@@ -88,5 +89,4 @@ while True:
 
     #Stop
     else:
-        print("hello")
         break
