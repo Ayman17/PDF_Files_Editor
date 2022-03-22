@@ -88,5 +88,4 @@ while True:
 
     #Stop
     else:
-        print("hello")
         break
